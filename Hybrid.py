@@ -54,7 +54,7 @@ class Hybrid(tk.Tk):
         welcome.geometry("1000x550+{}+{}".format(((sc_width-1000)//2), ((sc_height-550)//2)))
         welcome.wm_attributes("-alpha", 0.3)
         
-        img = Image.open("mod.png")
+        img = Image.open("images\mod.png")
         wpercent = (200/float(img.size[0]))
         hsize = int((float(img.size[1])*float(wpercent)))
         welcome_img = img.resize((1000,550), Image.LANCZOS)
